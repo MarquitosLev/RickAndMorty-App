@@ -42,7 +42,7 @@ function App() {
       <div className='flex items-center justify-center '>
 
         <img
-          src="src\assets\logo-Rick-and-Morty.png"
+          src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png"
           alt="Rick and Morty"
           className='w-80 transform transition-transform hover:scale-105'
         />
@@ -50,19 +50,23 @@ function App() {
       </div>
 
       {/* Selector de pagina */}
-      <div className='flex items-center justify-center gap-40'>
-
+      <div className='flex justify-center gap-40'>
         <button
           className='bg-blue-500 hover:bg-blue-600 text-white font-bold px-4 py-2 rounded-md'
           onClick={prevPage}
-        >Previus</button>
+        >
+          Previus
+        </button>
 
         <button
           className='bg-blue-500 hover:bg-blue-600 text-white font-bold px-4 py-2 rounded-md'
           onClick={nextPage}
-        >Next</button>
-
+        >
+          Next
+        </button>
       </div>
+
+
 
       {/* Cards */}
       <div className='grid grid-cols-3 gap-4 p-7'>
