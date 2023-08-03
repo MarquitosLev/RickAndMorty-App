@@ -2,12 +2,7 @@ import { useState, useEffect } from 'react'
 import CharacterCard from './Components/CharacterCard'
 import Header from './Components/Header'
 import './App.css'
-import Search from './Components/Search';
-import ButtonComponent from './Components/ButtonComponent'
-
-const SearchComponent = () => {
-  return <Search />
-}
+import FindCharacter from './Components/FindCharacter'
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -47,11 +42,10 @@ function App() {
       {/* Header */}
       <Header />
 
-      <ButtonComponent />
+      <FindCharacter />
 
       {/* Contenido principal a mostrar */}
       <div id='main-content'>
-
         {/* Selector de pagina */}
         <div className="flex justify-center space-x-4">
           <button className="w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full flex items-center justify-center" onClick={prevPage}>
@@ -68,9 +62,6 @@ function App() {
 
           </button>
         </div>
-
-
-
 
         {/*  
           CARDS
