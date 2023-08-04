@@ -67,13 +67,14 @@ function App() {
           CARDS
           DESAPARECE SI QUIERE BUSCAR PERSONAJES
         */}
-        <div className='grid grid-cols-4 gap-4 p-7'>
+        <div className='grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-7'>
 
           {characters.map((dato) => (
             <CharacterCard dato={dato} key={dato.id} />
           ))}
 
-        </div >
+        </div>
+
 
       </div>
     </div>

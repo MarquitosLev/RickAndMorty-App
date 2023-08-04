@@ -34,11 +34,11 @@ function Search() {
                     placeholder='Buscar personaje'
                     value={searchTerm}
                     onChange={handleChange}
-                    className="border-gray-300 rounded-md p-2 mb-4 "
+                    className="rounded-md p-2 mb-4 "
                 />
             </div>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-3">
                 {results.map((character) => (
                     <CharacterCard dato={character} key={character.id} />
                 ))}
